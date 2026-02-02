@@ -4,4 +4,4 @@ app = FastAPI(title = "Core API")
 
 @app.get("/health")
 def healthCheck():
-    return {"status": "ok"}
+    return {"status": "ok. Re-deploy successful"}
