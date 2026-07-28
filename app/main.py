@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from app.api.routes import router
 
-app = FastAPI(title = "Core API")
+app = FastAPI()
+app.include_router(router)
 
-@app.get("/health")
-def healthCheck():
-    return {"status": "ok. Re-deploy successful"}
